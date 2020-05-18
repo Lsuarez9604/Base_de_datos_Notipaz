@@ -1,10 +1,16 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
+
+
 create database esc_prod;
 
+-- Create By @SpaceBunny@
+
 USE esc_prod;
+
 --Creación de la tabla de programas de la escuela//
+
 CREATE TABLE programas(
 id VARCHAR(4)NOT NULL,
 nombre_pro VARCHAR(150)NOT NULL,
@@ -34,7 +40,7 @@ INSERT INTO programas VALUES('81N','Ingenieria en seguridad y salud en el trabaj
 CREATE TABLE estu_ip16D(
 id INT(15) NOT NULL,
 nombre VARCHAR(200) NOT NULL,
-email VARCHAR(150) ,
+email VARCHAR(50),
 PRIMARY KEY(id));
 INSERT INTO estu_ip16D VALUES(1096216581,'Kevin fernando ricardo sanabria','kevinsky_92@hotmail.com');
 INSERT INTO estu_ip16D VALUES(1096222128,'Edna rocio collante trigos','ecollant292@correo.ean.edu.co');
@@ -64,19 +70,19 @@ INSERT INTO ip_16D VALUES('16D-X','SEMESTRE X');
 -- Creacion de tabla con estudiantes
 CREATE TABLE estu_ip16N(
 id INT(15) NOT NULL,
-nombre VARCHAR(200),NOT NULL,
-email VARCHAR (150),
+nombre VARCHAR(200)NOT NULL,
+email VARCHAR (50),
 PRIMARY KEY(id));
 
-INSER INTO estu_ip16N VALUES(1096185839,'Walter Samuel Hernandez Quintero','walter.produccion@hotmail.com');
-INSER INTO estu_ip16N VALUES(1096193807,'Regis Antonio Torres Jimenez','shakespeare18379@hotmail.com');
-INSER INTO estu_ip16N VALUES(1096194366,'Cesar Augusto Carreño','cesar-1907@hotmail.com');
-INSER INTO estu_ip16N VALUES(1096197391,'William Andres Castañeda Yepes','wacy_88@hotmail.com');
-INSER INTO estu_ip16N VALUES(1096208076,'Jessica Liseth Garcia Mendoza','jeligame_12@hotmail.com');
-INSER INTO estu_ip16N VALUES(1096216128,'Anyi Licet Flautero Chacon','cangurita0514@hotmail.com');
-INSER INTO estu_ip16N VALUES(1096225666,'Miller Alexander Bolaños Rangel','shart_42@hotmail.com');
-INSER INTO estu_ip16N VALUES(1098609587,'Jhon Edinson Rubio Ardila','jerafl2003@hotmail.com');
-INSER INTO estu_ip16N VALUES(49660754,'Alba Luz Santiago Mendoza','albajulian18@hotmail.com');
+INSERT INTO estu_ip16N VALUES(1096185839,'Walter Samuel Hernandez Quintero','walter.produccion@hotmail.com');
+INSERT INTO estu_ip16N VALUES(1096193807,'Regis Antonio Torres Jimenez','shakespeare18379@hotmail.com');
+INSERT INTO estu_ip16N VALUES(1096194366,'Cesar Augusto Carreño','cesar-1907@hotmail.com');
+INSERT INTO estu_ip16N VALUES(1096197391,'William Andres Castañeda Yepes','wacy_88@hotmail.com');
+INSERT INTO estu_ip16N VALUES(1096208076,'Jessica Liseth Garcia Mendoza','jeligame_12@hotmail.com');
+INSERT INTO estu_ip16N VALUES(1096216128,'Anyi Licet Flautero Chacon','cangurita0514@hotmail.com');
+INSERT INTO estu_ip16N VALUES(1096225666,'Miller Alexander Bolaños Rangel','shart_42@hotmail.com');
+INSERT INTO estu_ip16N VALUES(1098609587,'Jhon Edinson Rubio Ardila','jerafl2003@hotmail.com');
+INSERT INTO estu_ip16N VALUES(49660754,'Alba Luz Santiago Mendoza','albajulian18@hotmail.com');
 
 -- Creacion de tabla de semestres en el programa
 CREATE TABLE ip_16N(
@@ -99,17 +105,43 @@ INSERT INTO ip_16N VALUES('16N-X','SEMESTRE X');
 
 -- Inicio de creacion de tablas del programa Ingenieria en higiene y seguridad industrial Diurno
 
--- Creacion de tabla con estudiantes
+-- Creacion de tabla con estudiantes jornada Diurna
 
 CREATE TABLE estu_ihsi38D(
 id INT(15) NOT NULL,
-nombre VARCHAR(200),NOT NULL,
-email VARCHAR (150),
+nombre VARCHAR(200)NOT NULL,
+email VARCHAR (50),
 PRIMARY KEY(id));
 
-INSERT INTO estu_ihsi38D VALUES();
+INSERT INTO estu_ihsi38D VALUES(1002256481,'Jaison Peña Rivera','jaisonrivera17@hotmail.com');
+INSERT INTO estu_ihsi38D VALUES(1003335327,'Gezmin Patricia Ospino Mejia','patryciamejia@gmail.com');
+INSERT INTO estu_ihsi38D VALUES(1005179914,'Tania Liseth Romero Alvarado','TLRA_13@HOTMAIL.COM');
+INSERT INTO estu_ihsi38D VALUES(1005384516,'Angelica Rojas Castellanos','angelikeila1997@gmail.com');
+INSERT INTO estu_ihsi38D VALUES(1005461705,'Monica Yulieth Esparza Parada','yulieth199483@hotmail.com');
+INSERT INTO estu_ihsi38D VALUES(1010129207,'Johan Julian Quintero Rey','taiguer123@outlook.com');
+INSERT INTO estu_ihsi38D VALUES(1039703678,' Angie Paola Uribe Gaviria','angie.gaviria70@gmail.com');
+INSERT INTO estu_ihsi38D VALUES(1050921114,'Shirley Villalba Lopez','estevan-sexy@hotmail.com');
+INSERT INTO estu_ihsi38D VALUES(1050924641,'Camila Andrea Iglesias Toloza','camandrea18@hotmail.com');
+INSERT INTO estu_ihsi38D VALUES(1053587067,'Carolina Fuentes Alvarado','karolalva80@gmail.com');
+INSERT INTO estu_ihsi38D VALUES(1064117776,' Yaritza Karina Ruiz Guzman','yarithzaruiz-95@hotmail.com');
+INSERT INTO estu_ihsi38D VALUES(1096211057,'Leonardo Tovar Mira','LEOTOVAR_@HOTMAIL.COM');
+INSERT INTO estu_ihsi38D VALUES(1096227058,'Ferney Morelo Monsalve','ferneymorelo30@gmail.com');
+INSERT INTO estu_ihsi38D VALUES(1096234476,'Andres Mauricio Galet Hernandez','andresgalet@hotmail.com');
+INSERT INTO estu_ihsi38D VALUES(1096237633,'Jesus David Guerra Cabarcas','jguerra3003@hotmail.com');
+INSERT INTO estu_ihsi38D VALUES(1096237943,'Yarutsa Sierra Tamara','yasita161719@hotmail.com');
+INSERT INTO estu_ihsi38D VALUES(1096243705,'Yenni Yulitza Solorzano Galvan','yenni_sitta@hotmail.com');
+INSERT INTO estu_ihsi38D VALUES(1096245889,'Karen Loraine Sanchez Ayala','karenloraine.sanchez@unipaz.edu.co');
+INSERT INTO estu_ihsi38D VALUES(1096247423,'Jhors Alberto Puerto Gutierrez','Jhorspugu@hotmail.com');
+INSERT INTO estu_ihsi38D VALUES(1096247861,'Mariana Carreño Morenno','mariana.carreno@unipaz.edu.co');
+INSERT INTO estu_ihsi38D VALUES(1096248539,'Andry Yulieth Carreño Masson','andry.carreno@unipaz.edu.co');
+INSERT INTO estu_ihsi38D VALUES(1096250853,'Diego Andres Alza Rincon','rubyrincon@hotmail.com');
+INSERT INTO estu_ihsi38D VALUES(1096251753,'Lian Carlos Zuñiga Diaz','liancarlito_2720@live.com');
+INSERT INTO estu_ihsi38D VALUES(1096252028,'Karen Julissa Marin Salazar','Julissa.salazar.ks@gmail.com');
+INSERT INTO estu_ihsi38D VALUES(1096252793,'Michelle Dayana Jimenez Castillo','michelladragona@hotmail.com');
+INSERT INTO estu_ihsi38D VALUES(1099550614,'Lizeth Carolina Tellez Cadavid','LIKATEKA1994@HOTMAIL.COM');
 
---Creacion de tabla de semestres en el programa
+
+
 CREATE TABLE ihsi_38D(
 id VARCHAR(10)NOT NULL,
 name VARCHAR(20)NOT NULL,
@@ -124,6 +156,78 @@ INSERT INTO ihsi_38D VALUES('38D-VII','SEMESTRE VII');
 INSERT INTO ihsi_38D VALUES('38D-VIII','SEMESTRE VIII');
 INSERT INTO ihsi_38D VALUES('38D-IX','SEMESTRE IX');
 INSERT INTO ihsi_38D VALUES('38D-X','SEMESTRE X');
+
+
+-- Creacion de tabla con estudiantes jornada Nocturna
+
+
+CREATE TABLE estu_ihsi38N(
+id INT(15) NOT NULL,
+nombre VARCHAR(200)NOT NULL,
+email VARCHAR (50),
+PRIMARY KEY(id));
+
+
+INSERT INTO estu_ihsi38N VALUES(1001815293,'Luisa Fernanda Caicedo Moralez','luiyi.04@hotmail.es');
+INSERT INTO estu_ihsi38N VALUES(1007197120,'Jackeline Moreno Galviz','gildardo.moreno@unipaz.edu.co');
+INSERT INTO estu_ihsi38N VALUES(1007899360,'Sharon Eliana Ascanio Garrido','sharonascanio0602@outlook.com');
+INSERT INTO estu_ihsi38N VALUES(1039679451,'Rosa Elena Calle Gomez','rositacalle0927@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1042211091,'Jose Gregorio Agredo Hernandez','cocheto.g@gmail.com');
+INSERT INTO estu_ihsi38N VALUES(1045695459,'Jhonnathan Vasquez Diaz','jhovaz29@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1045706757,'Frank David Herrera Charrys','laquimicadefrank@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1051637071,'Maria Alejandra Romero Figueroa','marisolf247@gmail.com');
+INSERT INTO estu_ihsi38N VALUES(1054561446,'Lizeth Vanessa Cruz Pineda','liizodonto07@gmail.com');
+INSERT INTO estu_ihsi38N VALUES(1062810111,'Yolima Ditta Quintero','yoditqui.09@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1065827224,'Yayra Marcela Villa Sanchez','yairavilla0718@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1090449727,'Daurys Ernesto Peinado Rivera','rdernesto23@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1096191303,'Jose Angel Cañas Gomez','joanca_308@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1096209232,'Leidy Fernanda Henao Castro','leidyferhenao@gmail.com');
+INSERT INTO estu_ihsi38N VALUES(1096215528,'Oscar Herrera Atencia','Oshera04@hotmail.es');
+INSERT INTO estu_ihsi38N VALUES(1096222152,'Liliana Alexandra Cano Gutierrez','liliana-alexa2804@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1096223758,'Nancy Yaizule Meza Velasquez','yaizule2208@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1096224244,'Dayanne Katerine Morales Munera','DKMORALES4@MISENA.EDU.CO');
+INSERT INTO estu_ihsi38N VALUES(1096226251,'Yenny Paola Camacho Sepulveda','paola.camacho110@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1096230012,'Ana Baena Gonzalez','ELEKTRA_0111@HOTMAIL.COM');
+INSERT INTO estu_ihsi38N VALUES(1096231575,'Daris del Carmen Rodriguez Arango','darys_rodriguez@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1096233104,'Heilyn Sussan Ibarra Barbosa','heilynsussanmelany@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1096233470,'Angie Shirley Jimenez useda','ashijius3826@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1096235983,'Luis Francisco Romero Blanco','luisfromero01@gmail.com');
+INSERT INTO estu_ihsi38N VALUES(1096237195,'Jamin Puentes Gonzalez','jazminp0873@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1096240229,'Wilmar Leonardo Urueña Sanchez','WILLIAM_URUENA@OUTLOOK.ES');
+INSERT INTO estu_ihsi38N VALUES(1096240669,'Wenndy Barbarita Machuca Mercado','wenndymachuca06@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1096240708,'Dennys Daniela Gomez Gonzalez','JNB1978@HOTMAIL.COM');
+INSERT INTO estu_ihsi38N VALUES(1096242179,'Angie Andrea Delgado Torres','nubi_79@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1096243037,'Jhonatan Arenas Garcia','jhonatan_arenas_garcia@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1096243124,'Lidy Yurlexy Rueda Correa','lidyrueda@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1096243495,'Wendy Carolina Garcia Reina','wendyc97@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1096244972,'Dayana Michel Rodriguez Campos','DAMI_1602@HOTMAIL.COM');
+INSERT INTO estu_ihsi38N VALUES(1096245073,'Yesenia Bueño Peña','yesecbp27@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1096246131,'Gonzalo Gonzalez Rojas','gonzalogrojas@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1096247896,'Isis Lakshmi Nornes Cardona Osorio','isyaosco24@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1096249395,'Lina Marcela Lozada Pimentel','linamark12@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1098622241,'Rodrigo Rafael Duran Blanco','didax86@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1098699995,'Erika Patricia Saavedra Jaimes','ade5512_@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1098701808,'Diana Carolina Sanabria Bayona','carolinasanabria0317@gmail.com');
+INSERT INTO estu_ihsi38N VALUES(1098781055,'Jenny Marcela Acosta Diaz','chiikiixad12@hotmail.com ');
+INSERT INTO estu_ihsi38N VALUES(1098792638,'Lina Maria Solano Vidales','limasovi_@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1100969899,'Dayana Fernanda Franco Velasquez','');
+INSERT INTO estu_ihsi38N VALUES(1101208152,'Anyi Petrona Meza Mejia','linda0124@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1101209158,'Brayan Alexander Moreno Velandia','alexander_mv_017@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1101817444,'Mauricio Javier Torres Pajaro','mau_kaltorres@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1102722626,'Damaris Liceth Patiño Vargas','damarispati56@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1102723500,'Cristian Javier Amaya   Rodriguez','cristian.rodriguezcristianrodriguez@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(1123513685,'Eilyn Daniela Gutierrez Cuan','eilyn.daniela@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(13852009,'Isnardo Corzo Gomez','isnardo_1980@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(28488489,'Sandra Milena Rodriguez Maye','sandritam2208@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(37578558,'Yuri Marcela Arciniegas Cruz','yuri.arciniegas.cruz@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(37581238,'Ingrid Marcela Florez','INGMAR850@HOTMAIL.COM');
+INSERT INTO estu_ihsi38N VALUES(52208237,'Nely Del Rosario Davila Cubillos','CHARITO4315@HOTMAIL.COM');
+INSERT INTO estu_ihsi38N VALUES(63473222,'Xiomara Hernandez Medina','gordaxiomara@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(63549636,'Yenny Dianey Vasquez Castro','yenny_vasquezcastro@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(91530671,'Edinson Leonardo Suarez','edinsonsuarez2011@hotmail.com');
+INSERT INTO estu_ihsi38N VALUES(93478958,'Victor Manuel Matoma Lozano','torvictom55@hotmail.com');
+
+
 
 CREATE TABLE ihsi_38N(
 id VARCHAR(10)NOT NULL,
@@ -140,6 +244,13 @@ INSERT INTO ihsi_38N VALUES('38N-VIII','SEMESTRE VIII');
 INSERT INTO ihsi_38N VALUES('38N-IX','SEMESTRE IX');
 INSERT INTO ihsi_38N VALUES('38N-X','SEMESTRE X');
 
+-- Pendiente las asignaturas y docentes por falta de información 
+-----------------------------------------------------------
+
+-- Inicio de creacion de tablas del programa Ingenieria Producción Diurno
+
+-- Creacion de tabla con estudiantes jornada Diurna
+
 CREATE TABLE ip_47D(
 id VARCHAR(10)NOT NULL,
 name VARCHAR(20)NOT NULL,
@@ -154,6 +265,9 @@ INSERT INTO ip_47D VALUES('47D-VII','SEMESTRE VII');
 INSERT INTO ip_47D VALUES('47D-VIII','SEMESTRE VIII');
 INSERT INTO ip_47D VALUES('47D-IX','SEMESTRE IX');
 INSERT INTO ip_47D VALUES('47D-X','SEMESTRE X');
+
+
+-- Creacion de tabla con estudiantes jornada Diurna
 
 CREATE TABLE ip_47N(
 id VARCHAR(10)NOT NULL,
@@ -170,6 +284,44 @@ INSERT INTO ip_47N VALUES('47N-VIII','SEMESTRE VIII');
 INSERT INTO ip_47N VALUES('47N-IX','SEMESTRE IX');
 INSERT INTO ip_47N VALUES('47N-X','SEMESTRE X');
 
+
+-- Pendiente las asignaturas y docentes por falta de información 
+-----------------------------------------------------------
+
+-- Inicio de creacion de tablas del programa isst_81d Diurno
+
+-- Creacion de tabla con estudiantes jornada Diurna
+
+CREATE TABLE estu_isst_81D(
+id INT(15) NOT NULL,
+nombre VARCHAR(200)NOT NULL,
+email VARCHAR (50),
+PRIMARY KEY(id));
+
+INSERT INTO estu_isst_81D VALUES(1002295560,'Yeny Paola Franco Beltran','yenyfranco524@gmail.com');
+INSERT INTO estu_isst_81D VALUES(1002444654,'Alvaro Fernando Peña Pacheco','alvarope597@gmail.com');
+INSERT INTO estu_isst_81D VALUES(1002448062,'Adriana Selena Serpa Centeno','selenaserpacenteno14@gmail.com');
+INSERT INTO estu_isst_81D VALUES(1004846588,'Zuly Natalia Bernal Quintero','zulybernal9@gmail.com');
+INSERT INTO estu_isst_81D VALUES(1005183887,'Jemy Katerin Gomez Florez','kategf22@hotmail.com');
+INSERT INTO estu_isst_81D VALUES(1005240038,'Yuleimi Andrea Saldaña Carrillo','andreasaldana@gmail.com');
+INSERT INTO estu_isst_81D VALUES(1005240256,'Nicol Smith Gomez Santiago','gemmyleht@hotmail.com');
+INSERT INTO estu_isst_81D VALUES(1005240725,'Karol Michelle Sandoval Mejia','santosandoman@gmail.com');
+INSERT INTO estu_isst_81D VALUES(1005241483,'Jimmy Alexander Mogollon Prada','merlinmogollon@gmail.com');
+INSERT INTO estu_isst_81D VALUES(1005563913,'Danna Michel Sandoval Mejia','claudiasolano1@hotmail.com');
+INSERT INTO estu_isst_81D VALUES(1005654000,'Maria Camila Ulloa Munive','mulloamunive2@gmail.com');
+INSERT INTO estu_isst_81D VALUES(1007114333,'Stefania Alvarez Zapata','alvarez-stefa@hotmail.com');
+INSERT INTO estu_isst_81D VALUES(1007414582,'Fabio Andres Afanador Jaimes','fabio100727@gmail.com');
+INSERT INTO estu_isst_81D VALUES(1095787486,'Jhon Heyber Mantilla Jaimes','heyberjhon2018@gmail.com');
+INSERT INTO estu_isst_81D VALUES(1096182173,'Leidy Maria Guevara Fajardo','leidy.guevaraf@live.com');
+INSERT INTO estu_isst_81D VALUES(1096229901,'Nayiret Lizarazo Zana','nayiretlizarazo@gmail.com');
+INSERT INTO estu_isst_81D VALUES(1096246812,'Yurleidis Esther Villamizar Meneses','yuvilla11@gmail.com');
+INSERT INTO estu_isst_81D VALUES(1096250847,'Daniel Moncayo Roa','crm_23_2012@hotmail.com');
+INSERT INTO estu_isst_81D VALUES(1192893903,'Yeidys Cerpa Nuñez','yecenu_15@hotmail.com');
+INSERT INTO estu_isst_81D VALUES(1193127310,'Julian Andres Terraza Farelo','julicp1999@gmail.com');
+
+
+
+
 CREATE TABLE isst_81D(
 id VARCHAR(10)NOT NULL,
 name VARCHAR(20)NOT NULL,
@@ -184,6 +336,84 @@ INSERT INTO isst_81D VALUES('81D-VII','SEMESTRE VII');
 INSERT INTO isst_81D VALUES('81D-VIII','SEMESTRE VIII');
 INSERT INTO isst_81D VALUES('81D-IX','SEMESTRE IX');
 INSERT INTO isst_81D VALUES('81D-X','SEMESTRE X');
+
+
+-- Creación de la tabla de registro de estudiantes de Ingenieria en seguridad y salud en el trabajo nocturno  en conjunto con sus semestres
+
+CREATE TABLE estu_isst_81N(
+id INT(15) NOT NULL,
+nombre VARCHAR(200)NOT NULL,
+email VARCHAR (50),
+PRIMARY KEY(id));
+
+INSERT INTO estu_isst_81N VALUES(1001815084,'Yexica Andrea Gutierrez Sanchez','andreagutierez311@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1001815224,'Lina Marcela Sanabria Macias','sanabrialina22@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1002255701,'Yoleidys Romero Florez','romerito.florez@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(1002387187,'Jazmin Adriana Guerrero Lopez','angie_natalia990810@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(1003214361,'Andreina Marcela Escobar Mejia','andreamejiaescobar17@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1005175610,'Juan Sebastian Gallardo Niño','sebas07gallar@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1005176185,'Andrea Lucia Rivero Aguilar','andrealucia0905@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1005176458,'Shaden Cardozo Jimenez','shadencardozo@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1005176813,'Johan Javier Rueda Monsalve','ruedamonsalvejohan@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1005178843,'Norida Rodriguez Patiño','norida.rodriguez5259@correo.policia.gov.co');
+INSERT INTO estu_isst_81N VALUES(1005180376,'Maryulis Rodriguez Patiño','moralesalvaradomaryulis@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1005180630,'Carolina Yeribeth Salcedo Leon','carolinasalcedo0401@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1005181097,'Juan Jose Rodriguez Gutierrez','jj2022rodriguez@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1005181182,'Luis Eduardo Martinez Trujillo','martineztrujillo111@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1005182579,'Angie Vanessa Martinez Cuadroz','angie.martinezcu@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(1005182657,'Luz Heliana Montaño Macias','helimacias5@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1005186904,'Monica Yulitza Uribe Duran','mduran1277@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(1005188167,'Jorge Jimenez Pedrozo','georgejimenez0024@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1005188575,'Andrea Stephania Acosta Quesada','acostaandrea2105@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1005220538,'Juan Sebastian Mejia De La Ossa','juan_diez@outlook.es');
+INSERT INTO estu_isst_81N VALUES(1005221032,'Heyllen Lorena Sanabria Hernandez','hcbmisegundohogar@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1005239962,'Shaira Alejandra Galvis Palencia','galvisshaira@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(1005272959,'Sergio Andres Ardila Reyes','crisduwan0305@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1005325558,'Juan Felipe Carrillo Rodriguez','piper0980@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1005326235,'Ivan De Jesus Amaya Rincon','ivanamaya1019@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1005346643,'Maria Fernanda Vargas Rueda','mafer.2015@outlook.es');
+INSERT INTO estu_isst_81N VALUES(1007715301,'Hector Garcia Bonilla','yeye-2343@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(1007715375,'Bryan Alejandro Toloza Mendoza','bryansi1804@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1023961798,'Laura Daniela Atencia Carvajal','lauraatencia17@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1050553480,'Katherine Vergara Corpus','katerin2703@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(1096184837,'Jose Luis Ladino Calvo','j.ladino25@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(1096185594,'Mayra Andrea Castillo Porras','castillomayra500@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1096191494,'Ledys Viviana Guarin Guevara','ledysasesorahse@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1096192414,'Vladimir Moreno Rios','vlachito_87@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(1096198479,'Kimberli Johana Vega Aguas','johanita17_@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(1096215083,'Alexandra Jimenez Florez','alexandra0722jimenez@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1096215150,'Natalia Andrea Santiago Plata','natica._08@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(1096218027,'Jesus Antonio Forero Moreno','boruto1308@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1096224211,'Milena Edelmira Aldana Aviles','milena.aldana05@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(1096228228,' Robinson Camilo Jimenez Escobar','robin00702@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(1096229895,'Oscar Ivan Vasquez Rojas','ivan2894@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(1096231983,'Angie Milena Peña Delgado','angie.pd6@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1096235934,'Ibeth Katherine Martinez Tarazona','tarazonakaterine16@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1096240078,'Nefer Rodriguez Reinel','neferreinel@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(1096241305,'Dayanna Katherine Martinez Avila Gomez','dayanaavila04@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(1096241789,'Natalia Paez Seña','nataliapaezpaez15@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1096242029,'Carlos Armando Lopez Bravo','lopezsolrac97@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1096242136,'Leyla Andrea Florez Piedrahita','laflorez63@misena.edu.co');
+INSERT INTO estu_isst_81N VALUES(1096242767,'Miller Fernando Sanmiguel Torres','hotter.slp@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1096245308,'Esteiverth Daisut Rodriguez Muñoz','daisut05@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1096246415,'Jenny Paola Rodriguez Cruz','jprc_27@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(1096246822,'Angie Melissa Polanco Saavedra','melissita2502@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(1096249218,'Jonathan Andres Jaimes Peña','yonatirri29@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1096252422,'Pedro Jose Cortes Flores','pedro99051704521_@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(1096254114,'Diana Milena Diaz Hernandez','dianadiiaz02@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1096254214,'Adrian Sneyder Beltran Ramirez','sneyder.bel@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1096255592,'Angie Macerla Lizarazo Diaz','marcediaz1357@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(1098612289,'Monica Marcela Lizarazo Diaz','monik86_27@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(1098613146,'Leydy Marcela Boada Garcia','leyhmarj64@gmail.com');
+INSERT INTO estu_isst_81N VALUES(1118555379,'Geraldine Gaviria Guladron','gegavi1993@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(1143271107,'Zaida Liliana Gomez Peña','daviza77@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(1143397214,'Liz Catalina Lima Chaparro','lizcatica11@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(36573790,'Yulieth Carina Nieto Cuadro','nieto.karina@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(63472167,'Luz Edith Valencia Rodriguez','luzvalencia0517@gmail.com');
+INSERT INTO estu_isst_81N VALUES(91445499,'Edwin Alfonso Montes Campo','edalmoca@hotmail.com');
+INSERT INTO estu_isst_81N VALUES(91514572,'Ruben Dario Baron Cardenas','ruben.baron@hotmail.com');
+
+
 
 CREATE TABLE isst_81N(
 id VARCHAR(10) NOT NULL,
@@ -200,6 +430,20 @@ INSERT INTO isst_81N VALUES('81N-VIII','SEMESTRE VIII');
 INSERT INTO isst_81N VALUES('81N-IX','SEMESTRE IX');
 INSERT INTO isst_81N VALUES('81N-X','SEMESTRE X');
 
+
+-- Fin de la creación de la ingenieria de seguridad y salud en el trabajo nocturno
+
+-- Creación de la tabla de registro de estudiantes de Tecnologia en Higiene y seguridad Industrial Diurno  en conjunto con sus semestres
+
+CREATE TABLE estu_tisi_32D(
+id INT(15) NOT NULL,
+nombre VARCHAR(200)NOT NULL,
+email VARCHAR (50),
+PRIMARY KEY(id));
+
+INSERT INTO estu_tisi_32D VALUES(1096191011,'Jesualdo Marquez Vega','jesuangel18@hotmail.com');
+
+
 CREATE TABLE tisi_32D(
 id VARCHAR(10) NOT NULL,
 name VARCHAR(20) NOT NULL,
@@ -210,6 +454,19 @@ INSERT INTO tisi_32D VALUES('32D-III','SEMESTRE IIII');
 INSERT INTO tisi_32D VALUES('32D-IV','SEMESTRE IV');
 INSERT INTO tisi_32D VALUES('32D-V','SEMESTRE V');
 INSERT INTO tisi_32D VALUES('32D-VI','SEMESTRE VI');
+
+-- Fin de la creación de Tecnologia en Higiene y Seguridad Industrial Diurno
+
+-- Creación de la tabla de registro de estudiantes de Tecnologia en Higiene y seguridad Industrial Nocturno  en conjunto con sus semestres
+
+CREATE TABLE estu_tisi_32N(
+id INT(15) NOT NULL,
+nombre VARCHAR(200)NOT NULL,
+email VARCHAR (50),
+PRIMARY KEY(id));
+
+INSERT INTO estu_tisi_32N VALUES(1096205648,'Ingris Tatiana Pacheco Gonzalez','ingipago10@hotmail.com');
+INSERT INTO estu_tisi_32N VALUES(1098656742,'Gloria Alexandra Pinzon Mendez','alexahs.14@hotmail.com');
 
 CREATE TABLE tisi_32N(
 id VARCHAR(10) NOT NULL,
@@ -222,6 +479,22 @@ INSERT INTO tisi_32N VALUES('32N-IV','SEMESTRE IV');
 INSERT INTO tisi_32N VALUES('32N-V','SEMESTRE V');
 INSERT INTO tisi_32N VALUES('32N-VI','SEMESTRE VI');
 
+-- Fin de la creación de Tecnologia en Higiene y Seguridad Industrial Nocturno
+
+-- Creación de la tabla de registro de estudiantes de Tecnologia Electromecanica Diurno  en conjunto con sus semestres
+
+
+CREATE TABLE estu_te_39D(
+id INT(15) NOT NULL,
+nombre VARCHAR(200)NOT NULL,
+email VARCHAR (50),
+PRIMARY KEY(id));
+
+INSERT INTO estu_te_39D VALUES(1005182702,'Juan Sebastian Sierra Zambrano','magekini@hotmail.com');
+INSERT INTO estu_te_39D VALUES(1096246066,'Emmanuel Serrano Mancilla','nayivemancilla@gmail.com');
+INSERT INTO estu_te_39D VALUES(1096252031,'Kevin Fabian Palencia Ramirez','fabian.pr07@hotmail.com');
+
+
 CREATE TABLE te_39D(
 id VARCHAR(10) NOT NULL,
 name VARCHAR(20) NOT NULL,
@@ -232,6 +505,39 @@ INSERT INTO te_39D VALUES('39D-III','SEMESTRE IIII');
 INSERT INTO te_39D VALUES('39D-IV','SEMESTRE IV');
 INSERT INTO te_39D VALUES('39D-V','SEMESTRE V');
 INSERT INTO te_39D VALUES('39D-VI','SEMESTRE VI');
+
+
+-- Fin de la creación de Tecnologia electromecanica diurno
+
+-- Creación de la tabla de registro de estudiantes de Tecnologia Electromecanica Nocturno  en conjunto con sus semestres
+
+CREATE TABLE estu_te_39N(
+id INT(15) NOT NULL,
+nombre VARCHAR(200)NOT NULL,
+email VARCHAR (50),
+PRIMARY KEY(id));
+
+INSERT INTO estu_te_39N VALUES(1005185009,'Miguel Vesga Cantillo','vanessa.vesga05@outlook.com');
+INSERT INTO estu_te_39N VALUES(1006714055,'Julio Breiner Mendoza Munive','mendoza-201@hotmail.com');
+INSERT INTO estu_te_39N VALUES(1042213284,'Jose Ramiro Maestre Mazo','jsrmaestre@gmail.com');
+INSERT INTO estu_te_39N VALUES(1042215261,'Miguel Angel Muskus Arrieta','mamuskus@misena.edu.co');
+INSERT INTO estu_te_39N VALUES(1051637156,'Luis Miguel Carpio Gutierrez','luis.carpio320@gmail.com');
+INSERT INTO estu_te_39N VALUES(1096184113,'Ricardo Andres Navarro Hernandez',' ');
+INSERT INTO estu_te_39N VALUES(1096218664,'Faber Andres Ampudia Pinilla','elniche023@hotmail.com');
+INSERT INTO estu_te_39N VALUES(1096225820,'Victor Manuel Elles Mier','natzudk@gmail.com');
+INSERT INTO estu_te_39N VALUES(1096232835,'Juan Carlos Herrera Alzate','zenakuz_17@hotmail.com');
+INSERT INTO estu_te_39N VALUES(1096234722,'Ignacio Rafael Mejia Alzate','a.mejia9031@gmail.com');
+INSERT INTO estu_te_39N VALUES(1096235661,'Sneyder Herazo Zarate','sneyder77@gmail.com');
+INSERT INTO estu_te_39N VALUES(1096238161,'Vitor Hugo Martinez Leon',' ');
+INSERT INTO estu_te_39N VALUES(1096238939,'Carlos Andres Ayala Morales','alupaqui-125@hotmail.com');
+INSERT INTO estu_te_39N VALUES(1096241433,'Carlos Alberto Cristancho Ovalle','ccristancho_97@hotmail.com');
+INSERT INTO estu_te_39N VALUES(1096244367,'Luis Hernandeo Macia Carpio','luismacias531@gmail.com');
+INSERT INTO estu_te_39N VALUES(1096246790,'Juan David Rivera Dovales','haloista@hotmail.com');
+INSERT INTO estu_te_39N VALUES(1096247510,'Natalia Yiseth Gonzalez Arrieta','natica-301@hotmail.com');
+INSERT INTO estu_te_39N VALUES(1096247740,'Arides Andres Morales Correa','andres_aamc@hotmail.com');
+INSERT INTO estu_te_39N VALUES(1096253370,'Richard Enrique Diaz Arenas','dulayneyandray@hotmail.com');
+INSERT INTO estu_te_39N VALUES(1096254035,'Juan Pablo Muñoz Acosta','juanpabloacosta11@gmail.com');
+INSERT INTO estu_te_39N VALUES(1096254036,' Jhonatan Andres Hernandez Cardenas','hernandezjhonatan891@gmail.com');
 
 CREATE TABLE te_39N(
 id VARCHAR(10) NOT NULL,
@@ -244,6 +550,111 @@ INSERT INTO te_39N VALUES('39N-IV','SEMESTRE IV');
 INSERT INTO te_39N VALUES('39N-V','SEMESTRE V');
 INSERT INTO te_39N VALUES('39N-VI','SEMESTRE VI');
 
+-- Fin de la creación de Tecnologia electromecanica Nocturno
+
+
+
+-- Creación de la tabla de registro de estudiantes de Tecnologia en seguridad y salud en el trabajo Nocturno  en conjunto con sus semestres
+
+CREATE TABLE estu_tsst_50N(
+id INT(15) NOT NULL,
+nombre VARCHAR(200)NOT NULL,
+email VARCHAR (50),
+PRIMARY KEY(id));
+
+INSERT INTO estu_tsst_50N VALUES(1000398306,'Faber Augusto Restrepo Cifuentes','faberrestrepocifuentes1819@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1002271350,'Juan David Posada Contreras','maocerpa12@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1003814110,' Luara Fernanda Medina Nieto','shirly_an1@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1005176494,'Katerin Dayanna Marquez Sierra','caterindayanna@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1005177563,'Erick Sebastian Carreño Velasquez','ericksebas24@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1005179909,'Jainer Guiza Benavides','j_g1999@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1005180116,'Nathely Gisseth Marquez Lizcano','gisethlizcano16@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1005180221,'Jeinny Carolina Jimenez Parra','jeinnycarolinajimenezparra@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1005180538,'Nicol Maria Martinez Bautista','martineznicol629@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1005181483,'Yurley Vanessa Garcia Mendoza','williamsgarcia2601@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1005181843,'Lizeth Sarmiento Florez','lizeth.2001.sarmiento@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1005183348,'Allison Samantha Sanchez Restrepo','allisonsamanthasanchez@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1005186335,'Veronica Tatiana Montalvo Padilla','tatamontalvo2428@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1005188062,'Melisa Galvan Areniz','galvanmelissa37@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1005188863,'Yessica Paola Carvajal Mejia','paome2608@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1005221830,'Jessica Salinas Suarez','jessicasalinassuarez091@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1005240193,'Narly Yulieth Pinto Jaimes','narly.yulieth0822@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1005259986,'Julieth Natalia Bonilla Hernandez','alfonsobonilla_3097@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1005345987,'Camilo Fernando Cornejo Campos','escobidoo-27@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1005411202,'Hemerson Jose Garcia Alfonson','emersonga2001@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1005461677,'Maria Lizeth Pinto Jaimes','maria.lizeth0217@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1005549209,'Diego Fernando Herrera Acevedo','diegoherrera01219@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1005655372,'Marisol Ardila Otero','marisol2001ardila@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1006517069,'Fabian Rogeles Arias','rogelesfabian@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1007640236,'Jhon Fredys Garcia Agudelo','davidsgarcia21@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1007755123,'Darwin Garcia Diaz','darwindiaz530@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1010012914,'Kevin Javier Morales Castro','elviejojaviacevedo@outlook.com');
+INSERT INTO estu_tsst_50N VALUES(1010076732,'Juan David Morales Castro','juandauo11@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1016097127,'Juan Camilo Serrano Chavez','serranochavezjuancamilo@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1030636652,'Andrea Juliana Garcia Campo','andreagarcia218@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1042213120,'Tania Olivero Cogollo','tatamontalvo2428@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1085231944,'Brian Miguel Camargo Oliveros','bmco1999@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1095807943,'Diva Carolina Duran Monsalve','limaria174@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096199501,'Katherine Cortes Rivera','ktherin23.kcr@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096205914,'Jenny Magaly Gonzalez Gutierrez','jeny_maga0710@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096207217,'Kelly Johana Blanco Maurello','kblancomaurello@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096213690,'Jennifer Lucia Roa Martinez','jeinroa91@hotmail.es');
+INSERT INTO estu_tsst_50N VALUES(1096217127,'Kelly Yesenia Egea Lopez','kelly.egea@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096220096,'Heidy Patricia Naranjo Garcia','estrellitalindateadoro1993@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096220673,'Henry Alejandro Abuabara Padilla','henryabuabara@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096227350,'Dalma Andrea Gomez Lambraño','aicamugo09@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096227844,'Carmen Julieth Mejia Segovia','julieth383@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096229147,'Ana Viviana Vargas Correa','vargasviviana1994@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096229254,'Angelica Rioz Martinez','angelita58_1508@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096230938,'Jose Romario Araujo Gil','jromarioaraujo@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096231337,'Jenifer Tatiana Carpio Cardenas','morenita2410@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096232548,'Angie Lizeth Martinez Melo','angiem013@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096235847,'Oscar Andres Avila Diaz','ctoscaravila@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096235894,'Kevin Cardenas Navarro','k.cardenas.n@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096236066,'Lisbeth Tatiana Velasquez Quintero','lisbethtatianav@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096239165,'Andres Felipe Garzon Hernandez','garzonandres296@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096240011,'Elida Julieth Acevedo Vargas','elidajulieth.1824@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096241686,'Daniela Anaya Torres','danielaanayat_22@outlook.com');
+INSERT INTO estu_tsst_50N VALUES(1096242349,'Jose Alejandro Molina Sarmiento','tatianamolinasarmiento@outlook.com');
+INSERT INTO estu_tsst_50N VALUES(1096243797,'Cesar Ospino Gomez','ospinocesar31@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096244104,'Angie Paola Alvernia Arcila','paolaarcila8090@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096244117,'Daniela Chinchilla Rincon','danielachinchilla50@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096247553,'Thomas Enrique Diaz Niño','tomasenrique_123@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096248799,'Maria Vanessa Rincon Camacho','mariateresa1217@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096249582,'Kevin Aguirre Briñez','todokevin.si@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096250143,'Malori Vanessa Rincon Camacho',' ');
+INSERT INTO estu_tsst_50N VALUES(1096254247,'Jose Esteban Malagon Romero','jmalagonromero@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096255289,'Monica Marcela Morales Ayala','mmmarcelayala15@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096255406,'Luis Fernando Fuentes Acosta','acostaluis1318@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1096257390,'Javier Rodriguez Acevedo','acevedojavierodriguez@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1097612786,'Zulay Zamara Bermudez Hernandez','zzbh1708@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1098357716,'Kelly Yohanna Ayala Cabrera','kelly.ohanna@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1098614052,'Viviana Carolina Uribe Uribe','willian_1730@outlook.com');
+INSERT INTO estu_tsst_50N VALUES(1098637791,'Yeris Alejandra Calvo Blanco','yeriscalvo1001@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1098688034,'Jose Vasquez Reyes','vasreyes8610@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1098695010,'Santiago Andres Arteaga Molina','santiagoarteagamolina@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1098761300,'Lizeth Tatiana Serrano Vargas','lizethtatianaserrano@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1098779695,'Marly Jasneidy Gonzalez Quintero','mathias.110615@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1098797767,'Lenis Tatiana Villa Amaya','asuilamaya@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1101206245,'Edison Alvarez Jaime','alvarez.93_sst@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1101206613,'Yurley Andrea Rangel Tamara','andretamarahse@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1116781785,'Sandra Rocio Zuluaga Acevedo','sandyzula@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1118555439,'Karen Tatiana Rojas Otero','jrcontrerasx1@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1143347531,'iroldo Arias Anaya','irolpack7@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(1192803952,'Linda Daniela Gutierrez Castañeda','lindadaniela266@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(1193443610,'Juliana Martinez Villareal','angel_marvi0611@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(16892798,'Yoiner Arturo Popayan Gaviria','yhosue777@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(28070608,'Luz Stella Rincon Londoño','luz3046673082@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(37548295,'Diana Marcela Duran Navarro','dimaduna78@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(37576610,'Lindrys Yohana Hernandez Rincon','l.joherin@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(63469704,'Sandra Mylena Vega Ayala','sandramylena1218@gmail.com');
+INSERT INTO estu_tsst_50N VALUES(72271782,'Omkar Celis Carpio','omkar23@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(91447658,'Teovaldo Agamez Florez','teovaldoagamez@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(91512312,'Jaury Andres Arias Rodriguez','andreschocato@hotmail.com');
+INSERT INTO estu_tsst_50N VALUES(93238818,'Bryan Grofe','hseclubmiramar@gmail.com');
+
+
+
 CREATE TABLE tsst_50N(
 id VARCHAR(10) NOT NULL,
 name VARCHAR(20) NOT NULL,
@@ -254,6 +665,27 @@ INSERT INTO tsst_50N VALUES('50N-III','SEMESTRE IIII');
 INSERT INTO tsst_50N VALUES('50N-IV','SEMESTRE IV');
 INSERT INTO tsst_50N VALUES('50N-V','SEMESTRE V');
 INSERT INTO tsst_50N VALUES('50N-VI','SEMESTRE VI');
+
+
+-- Fin de la creación de Tecnologia en seguridad y salud en el trabajo Nocturno
+
+
+-- Creación de la tabla de registro de estudiantes de Tecnologia en logistica del transporte multimodal Nocturno  en conjunto con sus semestres
+
+CREATE TABLE estu_tsst_54N(
+id INT(15) NOT NULL,
+nombre VARCHAR(200)NOT NULL,
+email VARCHAR (50),
+PRIMARY KEY(id));
+
+INSERT INTO estu_tsst_54N VALUES(1012434259,'Jeferson Javier Bejarano Torres','jefer-j@hotmail.com');
+INSERT INTO estu_tsst_54N VALUES(1067406413,'Jose Angel Almentero Suarez','almentero96@gmail.com');
+INSERT INTO estu_tsst_54N VALUES(1096233555,'Luis Eduardo Luna Rincon','luidu03@hotmail.com');
+INSERT INTO estu_tsst_54N VALUES(1096242171,'Jean Carlos Medina Ramos','luis_medina_ramos@hotmail.com');
+INSERT INTO estu_tsst_54N VALUES(1096245689,'Kevin Raul Duarte Rodriguez','kevinraulduarterodriguez23@hotmail.com');
+INSERT INTO estu_tsst_54N VALUES(28060658,'Tilcia Maria Palacio Reyes',' ');
+
+
 
 CREATE TABLE tltm_54N(
 id VARCHAR(10) NOT NULL,
@@ -266,6 +698,90 @@ INSERT INTO tltm_54N VALUES('54N-IV','SEMESTRE IV');
 INSERT INTO tltm_54N VALUES('54N-V','SEMESTRE V');
 INSERT INTO tltm_54N VALUES('54N-VI','SEMESTRE VI');
 
+
+-- Fin de la creación de Tecnologia en logistica del transporte multimodal Nocturno
+
+-- Creación de la tabla de registro de estudiantes de Tecnologia en operación de sistemas electromecanicos  Nocturno  en conjunto con sus semestres
+
+
+CREATE TABLE estu_tose_73N(
+id INT(15) NOT NULL,
+nombre VARCHAR(200)NOT NULL,
+email VARCHAR (50),
+PRIMARY KEY(id));
+
+INSERT INTO estu_tose_73N VALUES(1001815835,'Stiven David Solis Vargas','stivendavidsolisvargas@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1005175968,'Cristian Alexander Correa Ariza','cristiancorrea22@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(1005176504,'Jeisson Andres Castiblanco Romero','jeissoncastiblanco20@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1005179686,'Roberto Carlos Ortiz Londoño','rogger.alejandro27@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1005180766,'Daniel Alejandro Franco Guerron','daniel.fg20@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(1005181071,'Diego Luis Rodriguez Barrios','diegorodriguezdiegorodriguez@outlook.es');
+INSERT INTO estu_tose_73N VALUES(1005181563,'Johandry Urbina Garcia','johandryurbina9@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1005181656,'Gerson Sebastian Rios Arias','gersonrios.gsra@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1005181921,'Kevin Orlando Figueredo Herrera','kevinorlandodia26@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1005182037,'Arley Josue Mancilla Morales','arleymancillavargas@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(1005182515,'Duvan David Clavijo Pinzon','duvan_wanche241190@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(1005183515,'Santiago Jeudith Peinado Avellaneda','peinadosantiago6@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1005184455,'Mayer Alberto Perez Valderrama','alberper07@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1005186431,'Yofran Elian Gil Gonzalez','yofrangilgonzalez@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1005187528,'Luis Alberto Gomez Muñoz','luiisito_200010@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(1005188390,'Daniel Mauricio Barrera Espitia','damabaes2000@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(1005188418,'Jorge Sneider DIaz Devia','andresbarretobenjumea@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1005189327,'Francisco Jose Blanco Gomez','francisquito.28@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(1005190335,'Hector Andres Murallas Galvis','luchi1140@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(1005220352,'Joseph Pedrozo Miller','jamp.09.jm@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(1005220659,'William Daniel Figueredo Diaz','williamfiguered6@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1005221611,'Yesid Sebastian Sepulveda Muñoz','sebasdomundo10@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1005221733,'Ismael Enrique Suarez Rubiano','larozox123@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1005307264,'Alex Eduardo Guevara Peña','tilde11@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(1005324842,'Ronald Stiven Rivero Acevedo','stivenrivero001@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1005326095,'Angel Fabian Zapata Vidal','anfage90@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(1005344287,'Hector Adrian Pedraza Muñoz','adrianpedraza321@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1005653921,'Jorge Danilo Contreras Ortiz','danilocontreras0224@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1005664110,'Albert Luis Barbosa Cerrano','alberthserrano90@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1018441954,'Jhann Stapper Saenz','j_stapper_j@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(1052946802,'Alvaro ANTONIO Perez Retamoza','alvaroretaz@gamil.com');
+INSERT INTO estu_tose_73N VALUES(1096186747,'Jhonny Alejandro Cruz Barrera','cruz.barreraalejandro@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1096189329,'Eder Leandro Ruiz Meza','mezaeder@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(1096192708,'Victor Andres Campo Angarita','victorcampo88@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(1096201234,'Hector Leonardo Neira Villanueva','hectorneira_2013@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(1096209186,'Hernan Dario Madera Orrego','tec.madera08@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1096212835,'Kevin Vides Martinez','kevin_vm015@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(1096218352,'Mario Moreno Romero','bros13@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(1096218908,'Oscar Mauricio Sajonero Gallejos','mauro_1691@hotmail.es');
+INSERT INTO estu_tose_73N VALUES(1096219346,'Luis Eduardo Acuña Ballestero','leab0724@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1096221058,'Cristian Daniel Carrascal Cijanes','valedany0327@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1096234836,'Estevinson Caro Zetuain','ecaro63@misena.edu.co');
+INSERT INTO estu_tose_73N VALUES(1096237031,'Fabian Alberto Patiño Gutierrez','fabian.patino.17@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1096238043,'Jose Luis Cisneros Diaz','joseluiscinseros422@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1096238247,'Jailer Jesus Gomez Morales','jailergomez4@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1096240385,'Yoiner Caro Zetuain','yoinercarozetuain@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1096240658,'Sebastian Lopez Laporte','sebas_sebitas16@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(1096241064,'Sebastian Rojas Romero','sebasbox93@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(1096244744,'Favian Andres Sandoval Villalba','fs17997@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(1096248090,'Horacio Mier Florez','horacio-200@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(1096249347,'Edwin Fabian Ebrat Sanchez','edwinebratth@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1096250657,'Gerson Lozano Chaves','gersonlc.itsi@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1096250970,'Willian Gil Lobo','williamgillobo@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1096251012,'Victor Manuel Soto Calderon','vicsoca25@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1096252983,'Michael Steeven Vargas Cuadros','maikstiven18@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1096254106,'Nilton Andres Patiño Cuava','andrescuava@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1096254159,'Jaime Leonardo Vega Delgado','jaimeleonardojg53@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1096254497,'Juan Esteban Avila Barrera','jeab0024@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1104135001,'Duvan Felipe Sidray Arcos','danielaescobarc12@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1192895736,'Anthony Useda Cuadros','usedaa522@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1192904449,'Emanuel Mendez Vides','emanuelmendezvides@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1193130778,'Alexander Jeudith Peinado Perez','peinadoperez2381@gmail.com');
+INSERT INTO estu_tose_73N VALUES(1193142536,'Marlon Jose Rivera Martinez','marlonriveri1979@gmail.com');
+INSERT INTO estu_tose_73N VALUES(13569644,'Andres Mauricio Jaramillo','a.m.j10@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(13852757,'Wilfredo Lascarro Barrios','lascarro1305@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(13854363,'Oswaldo Daniel Miranda Arrieta','danielmiranda_13@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(37579444,'Viviana Andrea Cortes Londoño','viviana.cortes473@gmail.com');
+INSERT INTO estu_tose_73N VALUES(37580534,'Yolibet Duran Rolon','yoduro07@hotmail.com');
+INSERT INTO estu_tose_73N VALUES(92525829,'Jony Jose Peña Blnaquicet','joceth@hotmail.com');
+
+
+
 CREATE TABLE tose_73N(
 id VARCHAR(10) NOT NULL,
 name VARCHAR(20) NOT NULL,
@@ -277,6 +793,23 @@ INSERT INTO tose_73N VALUES('73N-IV','SEMESTRE IV');
 INSERT INTO tose_73N VALUES('73N-V','SEMESTRE V');
 INSERT INTO tose_73N VALUES('73N-VI','SEMESTRE VI');
 
+
+-- Fin de la creación de Tecnologia en operacion de sistemas electromecanicos Nocturno
+
+-- Creación de la tabla de registro de estudiantes de Tecnico profesional en operacion del transporte multimodal  Nocturno  en conjunto con sus semestres
+
+
+CREATE TABLE estu_tpotm_53N(
+id INT(15) NOT NULL,
+nombre VARCHAR(200)NOT NULL,
+email VARCHAR (50),
+PRIMARY KEY(id));
+
+INSERT INTO estu_tpotm_53N VALUES(1005179142,'Sandra Milena Centeno Rodriguez','sandra.centeno@trafigura.com');
+INSERT INTO estu_tpotm_53N VALUES(1098781867,'Feliz Alfredo Barrios Orozco','fabo210@hotmail.com');
+INSERT INTO estu_tpotm_53N VALUES(13570302,' Carlos Fabian Martinez Carreño','carlitosf.fabian@gmail.com');
+
+
 CREATE TABLE tpotm_53N(
 id VARCHAR(10) NOT NULL,
 name VARCHAR(20) NOT NULL,
@@ -286,8 +819,50 @@ INSERT INTO tpotm_53N VALUES('53N-II','SEMESTRE II');
 INSERT INTO tpotm_53N VALUES('53N-III','SEMESTRE IIII');
 INSERT INTO tpotm_53N VALUES('53N-IV','SEMESTRE IV');
 
+
+-- Fin de la creación de Tecnico profesional en operacion del transporte multimodal Nocturno
+
+-- Creación de la tabla de registro de estudiantes de Esp. en empaque, embalaje y almacenamiento de mcia en el transp multi en conjunto con sus semestres
+
+CREATE TABLE estu_eteeamtm_55N(
+id INT(15) NOT NULL,
+nombre VARCHAR(200)NOT NULL,
+email VARCHAR (50),
+PRIMARY KEY(id));
+
+INSERT INTO estu_eteeamtm_55N VALUES(1052704253,'Katrina Milena Castaño Carpio','katrimile@gmail.com');
+INSERT INTO estu_eteeamtm_55N VALUES(1052973355,'Jose Gregorio Campo solis','josegcampo08@gmail.com');
+INSERT INTO estu_eteeamtm_55N VALUES(1096190935,'Andrea Marcela Uribe Diaz','andreamarcelaud@hotmail.com');
+INSERT INTO estu_eteeamtm_55N VALUES(1096218663,'Snehider Ruiz Jimenez','schneikerrujimez@gmail.com');
+INSERT INTO estu_eteeamtm_55N VALUES(1096219149,'Karol Vanessa Aguilar Garzon','aguilarkarol58@gmail.com');
+INSERT INTO estu_eteeamtm_55N VALUES(1096230774,'Gerley Alexander Cortez Palomino','geracorpa1994@hotmail.com');
+INSERT INTO estu_eteeamtm_55N VALUES(1096235847,'Oscar Andres Avila Diaz','ctoscaravila@hotmail.com');
+INSERT INTO estu_eteeamtm_55N VALUES(1096236137,'Liseth Rozana Figueroa Meza','lisethfigueroa96@gmail.com');
+INSERT INTO estu_eteeamtm_55N VALUES(1096236156,'Jarry Eduardo Silva Mejia','jarry_mejia29@hotmail.com');
+INSERT INTO estu_eteeamtm_55N VALUES(1096236408,'Christian Samir Londoño Rico','christiansamir11@gmail.com');
+INSERT INTO estu_eteeamtm_55N VALUES(1096237246,'Marlon Joaquin Gomez Arguello','majogoar13@gmail.com');
+INSERT INTO estu_eteeamtm_55N VALUES(1096237852,'Hernando Jose Florez Acevedo','Nando_florez@hotmail.es');
+INSERT INTO estu_eteeamtm_55N VALUES(1096237884,'Luis Alejandro Campo Solis','luis_96campo@hotmail.com');
+INSERT INTO estu_eteeamtm_55N VALUES(1096240226,'Brayan Alexis Villamizar Barroso','villamizarbrayan01@hotmail.com');
+INSERT INTO estu_eteeamtm_55N VALUES(1096241951,'Maryison David Davis','maryinson.davis@hotmail.com');
+INSERT INTO estu_eteeamtm_55N VALUES(1096245923,'Mayra Alejandra Perez Sanchez','aleja_malu12@hotmail.com');
+INSERT INTO estu_eteeamtm_55N VALUES(1096247861,'Mariana Carreño Moreno','mariana.carreno@unipaz.edu.co');
+INSERT INTO estu_eteeamtm_55N VALUES(1096248539,'Andry Yulieth Carreño Moreno','andry.carreno@unipaz.edu.co');
+INSERT INTO estu_eteeamtm_55N VALUES(1098743681,'Silvia Juliana Zarate Delgado','silvia.zarate@unipaz.edu.co');
+INSERT INTO estu_eteeamtm_55N VALUES(63469401,'Edith Hernandez Valencia','edithhernandez04@hotmail.com');
+INSERT INTO estu_eteeamtm_55N VALUES(63559174,'Myriam Amaya Avila','amaya0205@hotmail.com');
+
+
+
 CREATE TABLE eteeamtm_55N(
 id VARCHAR(10) NOT NULL,
 name VARCHAR(20) NOT NULL,
 PRIMARY KEY(id));
+
 INSERT INTO eteeamtm_55N VALUES('55N-I','SEMESTRE I');
+
+
+-- Fin de la creación de Esp. en empaque, embalaje y almacenamiento de mcia en el transp multi
+
+
+
