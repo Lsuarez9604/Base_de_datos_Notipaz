@@ -34,6 +34,21 @@ INSERT INTO programas VALUES('81D','Ingenieria en seguridad y salud en el trabaj
 INSERT INTO programas VALUES('81N','Ingenieria en seguridad y salud en el trabajo-Nocturno');
 --Fin de la creación de tablas para cada programa//
 
+
+-- Inicio de la creación de Usuarios
+
+CREATE TABLE usuarios{
+id INT(4) AUTO_INCREMENT NOT NULL,
+Cedula Varchar(20) NOT NULL,
+Nombre VARCHAR(150)NOT NULL,
+Pass VARCHAR(20) NOT NULL,
+PRIMARY KEY(id);
+INSERT INTO usuarios VALUES(' ',1096200755,'Luis Suarez','1096200755');
+INSERT INTO	usuarios VALUES(' ',1096234522,'Carlos Garces','1096234522');
+INSERT INTO usuarios VALUES(' ',1234567890,'Admin','admin1234');
+
+--Finaliza la creación de usuarios
+
 --Inicio de creacion de tablas del programa Ingenieria de produccion diurno	
 
 -- Creacion de tabla con estudiantes
@@ -135,6 +150,7 @@ INSERT INTO estu_ihsi38D VALUES(1096247423,'Jhors Alberto Puerto Gutierrez','Jho
 INSERT INTO estu_ihsi38D VALUES(1096247861,'Mariana Carreño Morenno','mariana.carreno@unipaz.edu.co');
 INSERT INTO estu_ihsi38D VALUES(1096248539,'Andry Yulieth Carreño Masson','andry.carreno@unipaz.edu.co');
 INSERT INTO estu_ihsi38D VALUES(1096250853,'Diego Andres Alza Rincon','rubyrincon@hotmail.com');
+INSERT INTO estu_ihsi38D VALUES(1096251712,'Yelking Julian Navarro Jimenez','');
 INSERT INTO estu_ihsi38D VALUES(1096251753,'Lian Carlos Zuñiga Diaz','liancarlito_2720@live.com');
 INSERT INTO estu_ihsi38D VALUES(1096252028,'Karen Julissa Marin Salazar','Julissa.salazar.ks@gmail.com');
 INSERT INTO estu_ihsi38D VALUES(1096252793,'Michelle Dayana Jimenez Castillo','michelladragona@hotmail.com');
